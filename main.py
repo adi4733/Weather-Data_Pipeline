@@ -10,7 +10,7 @@ import requests
 with open('city_names.txt') as f:
     city_names = [line.strip() for line in f]
 
-# Read the API key from a credential file
+# Read the API key from a credential file just paste your api key from openweathermap.org
 with open("credential.txt", "r") as f:
     api_key = f.read()
 
