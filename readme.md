@@ -8,10 +8,13 @@ This script retrieves weather data for a list of cities from the OpenWeatherMap 
 ### Input Files
 
 city_names.txt: a text file containing a list of city names, one city per line.
+
 credential.txt: a text file containing the OpenWeatherMap API key.
-Output
+
+### Output
 
 A combined Pandas DataFrame containing weather data for all cities, with the following columns:
+
 city: city name
 long: longitude
 lat: latitude
@@ -38,9 +41,11 @@ type: system type
 country: country code
 sunrise: sunrise time in seconds
 sunset: sunset time in seconds
-Functions
+
+### Functions
 
 get_weather_data(city_name): retrieves weather data for a given city from the OpenWeatherMap API.
+
 kelvin_to_fahrenheit(kelvin): converts temperature from Kelvin to Fahrenheit.
 Script Flow
 
@@ -50,6 +55,8 @@ Retrieves weather data for each city using the get_weather_data function.
 Processes the data for each city, extracting relevant information and converting temperatures from Kelvin to Fahrenheit.
 Combines the data for all cities into a single Pandas DataFrame.
 Prints the combined DataFrame.
-Note
+
+
+### Note
 
 This script assumes that the OpenWeatherMap API key is stored in a file named credential.txt in the same directory as the script. You should replace this file with your own API key. Additionally, you should update the city_names.txt file with the list of cities you want to retrieve weather data for.
