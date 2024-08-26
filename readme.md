@@ -15,32 +15,32 @@ credential.txt: a text file containing the OpenWeatherMap API key.
 
 A combined Pandas DataFrame containing weather data for all cities, with the following columns:
 
-city: city name \n
-long: longitude
-lat: latitude
-temp_k: temperature in Kelvin
-temp_F: temperature in Fahrenheit
-feels_like_k: feels like temperature in Kelvin
-feels_like_F: feels like temperature in Fahrenheit
-temp_min_k: minimum temperature in Kelvin
-temp_min_F: minimum temperature in Fahrenheit
-temp_max_k: maximum temperature in Kelvin
-temp_max_F: maximum temperature in Fahrenheit
-pressure: atmospheric pressure
-humidity: humidity
-wind_speed: wind speed
-dt_utc: date and time of record in UTC
-sunrise_utc: sunrise time in UTC
-sunset_utc: sunset time in UTC
-id: weather condition ID
-main: weather condition main description
-description: weather condition description
-icon: weather condition icon
-all: cloud coverage
-type: system type
-country: country code
-sunrise: sunrise time in seconds
-sunset: sunset time in seconds
+city: city name  
+long: longitude  
+lat: latitude  
+temp_k: temperature (Kelvin)  
+temp_F: temperature (Fahrenheit)  
+feels_like_k: feels like (Kelvin)  
+feels_like_F: feels like (Fahrenheit)  
+temp_min_k: minimum temperature (Kelvin)  
+temp_min_F: minimum temperature (Fahrenheit)  
+temp_max_k: maximum temperature (Kelvin)  
+temp_max_F: maximum temperature (Fahrenheit)  
+pressure: atmospheric pressure  
+humidity: humidity  
+wind_speed: wind speed  
+dt_utc: record date and time (UTC)  
+sunrise_utc: sunrise time (UTC)  
+sunset_utc: sunset time (UTC)  
+id: weather condition ID  
+main: main weather description  
+description: weather description  
+icon: weather icon  
+all: cloud coverage  
+type: system type  
+country: country code  
+sunrise: sunrise time (seconds)  
+sunset: sunset time (seconds)
 
 ### Functions
 
@@ -49,12 +49,17 @@ get_weather_data(city_name): retrieves weather data for a given city from the Op
 kelvin_to_fahrenheit(kelvin): converts temperature from Kelvin to Fahrenheit.
 Script Flow
 
-Reads the list of city names from city_names.txt.
-Reads the OpenWeatherMap API key from credential.txt.
-Retrieves weather data for each city using the get_weather_data function.
-Processes the data for each city, extracting relevant information and converting temperatures from Kelvin to Fahrenheit.
-Combines the data for all cities into a single Pandas DataFrame.
-Prints the combined DataFrame.
+  Reads the list of city names from city_names.txt.
+  
+  Reads the OpenWeatherMap API key from credential.txt.
+  
+  Retrieves weather data for each city using the get_weather_data function.
+  
+  Processes the data for each city, extracting relevant information and converting temperatures from Kelvin to Fahrenheit.
+  
+  Combines the data for all cities into a single Pandas DataFrame.
+  
+  Prints the combined DataFrame.
 
 
 ### Note
