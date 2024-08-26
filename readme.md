@@ -15,7 +15,7 @@ credential.txt: a text file containing the OpenWeatherMap API key.
 
 A combined Pandas DataFrame containing weather data for all cities, with the following columns:
 
-city: city name
+city: city name \n
 long: longitude
 lat: latitude
 temp_k: temperature in Kelvin
